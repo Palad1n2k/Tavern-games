@@ -1,7 +1,7 @@
-import TavernGames from './components/TavernGames';
+import TavernGamesPage from './pages/TavernGamesPage';
 
 const App = () => {
-  return <TavernGames />;
+  return <TavernGamesPage />;
 };
 
 export default App;

@@ -1,0 +1,15 @@
+@import 
+  'founts', 
+  'globals', 
+  'media', 
+  'mixins', 
+  'normalize', 
+  'utils', 
+  'variables';
+
+@import 
+  './components/header',
+  './components/footer',
+  './components/button';
+
+@import './components/main-components/main';
