@@ -1,4 +1,4 @@
-import cn from 'classname'; // Решает проблему с потенциальным дублированием классов
+import cn from 'classnames'; // Решает проблему с потенциальным дублированием классов
 
 const Button = (props) => {
   const {
