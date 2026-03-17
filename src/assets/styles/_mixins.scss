@@ -1,0 +1,29 @@
+@mixin menu($gap: 10px, $before: "|") {
+  &__menu {
+    display: flex;
+
+    @if $before != "none" {
+      &-item:not(:last-child)::after {
+        content: $before;
+        margin: $gap;
+      }
+    }
+    @else {
+      gap: $gap;
+    }
+  }
+}
+
+@mixin logo($size: 52px) {
+  &__logo {
+    width: $size;
+    aspect-ratio: 1;
+  }
+}
+
+@mixin grid-header-footer($height-padding: 14px) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-block: $height-padding;
+}

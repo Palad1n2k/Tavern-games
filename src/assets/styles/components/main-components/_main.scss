@@ -1,3 +1,14 @@
-@import 
+@import
   'catalog',
   'about';
+
+.main {
+  $gap: 40px;
+
+  display: grid;
+  justify-items: center;
+  row-gap: $gap;
+  padding-block: $gap;
+}
+
+.title { text-align: center; }

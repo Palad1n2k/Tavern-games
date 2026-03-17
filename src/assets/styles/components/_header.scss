@@ -1,0 +1,9 @@
+header { background-color: var(--color-white); }
+
+.header {
+  color: var(--color-black);
+
+  @include grid-header-footer;
+  @include logo;
+  @include menu;
+}

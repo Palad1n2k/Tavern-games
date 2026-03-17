@@ -1,19 +1,16 @@
-const Navigation = (props) => {
+const Navigation = props => {
   const {
-    classNameNav,
-    classNameUl,
-    classNameLi,
-    classNameLink,
+    position,
     contentLink,
   } = props;
 
   return (
-    <nav className={classNameNav}>
-      <ul className={classNameUl}>
-        {contentLink.map(({link, content}) => {
+    <nav className={`${position}__nav`}>
+      <ul className={`${position}__menu`}>
+        {contentLink.map(({ link, content }) => {
           return (
-            <li className={classNameLi}>
-              <a href={link} className={classNameLink}>{content}</a>
+            <li className={`${position}__menu-item`}>
+              <a href={link} className={`${position}__menu-link`}>{content}</a>
             </li>
           );
         })}

@@ -1,5 +1,30 @@
-.root {
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray) var(--color-lithe-black);
+  overflow-y: scroll;
+}
+
+#root {
   display: grid;
-  grid-template-rows: auto, 1fr, auto;
-  justify-content: center;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: var(--color-gray);
+
+  font-family: 'Roboto';
+  font-weight: 200;
+}
+
+* {
+  &:not(h1, h2, h3, h4, h5, h6) {
+    font-size: 14px;
+  }
+}
+
+p {
+  & > ul {
+    & > li {
+      &:not(:last-child)::after { content: ";"; }
+      &:last-child::after { content: "."; }
+    }
+  }
 }

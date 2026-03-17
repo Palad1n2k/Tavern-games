@@ -1,0 +1,9 @@
+footer { background-color: var(--color-lithe-black); }
+
+.footer {
+  color: var(--color-white);
+
+  @include grid-header-footer(20px);
+  @include logo;
+  @include menu;
+}

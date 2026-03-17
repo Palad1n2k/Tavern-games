@@ -1,0 +1,13 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+  & p {
+    margin-bottom: 5px;
+
+    &:last-child { margin-bottom: 0; }
+
+    & > ul { margin-block: 0; }
+  }
+}

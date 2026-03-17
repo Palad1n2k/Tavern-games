@@ -1,13 +1,13 @@
-@import 
-  'founts', 
-  'globals', 
-  'media', 
-  'mixins', 
-  'normalize', 
-  'utils', 
+@import
+  'normalize',
+  'founts',
+  'globals',
+  'media',
+  'mixins',
+  'utils',
   'variables';
 
-@import 
+@import
   './components/header',
   './components/footer',
   './components/button';
