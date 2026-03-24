@@ -2,13 +2,20 @@
   'catalog',
   'about';
 
-.main {
-  $gap: 40px;
+$gap: 40px;
 
+.main {
   display: grid;
   justify-items: center;
   row-gap: $gap;
   padding-block: $gap;
 }
 
-.title { text-align: center; }
+section {
+  scroll-margin-top: $scroll-margin-top;
+
+  .title {
+    margin-bottom: $gap;
+    text-align: center;
+  }
+}

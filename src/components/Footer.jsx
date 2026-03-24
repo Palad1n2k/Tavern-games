@@ -1,28 +1,30 @@
+import LogoLink from "./LogoLink";
 import Navigation from "./Navigation";
 
 const Footer = () => {
   const position = 'footer';
   const contentLink = [
     {
-      link: '#',
+      link: '/',
       content: 'Главная'
     },
     {
-      link: '#',
-      content: 'Каталог'
+      link: '/#about',
+      content: 'О нас'
     },
     {
-      link: '#',
-      content: 'О нас'
+      link: '/catalog',
+      content: 'Каталог'
     },
   ];
 
   return (
     <footer>
       <div className={`${position} container`}>
-        <a href="">
-          <img src="../logo-white.png" alt="" className={`${position}__logo`} />
-        </a>
+        <LogoLink 
+          src="logo-white.png"  
+          className={`${position}__logo`} 
+        />
         <Navigation
           position={position}
           contentLink={contentLink}

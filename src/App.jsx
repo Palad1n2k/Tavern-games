@@ -1,7 +1,15 @@
-import TavernGamesPage from './pages/TavernGamesPage';
+import { BrowserRouter as BD } from 'react-router';
+import { HelmetProvider as HP } from 'react-helmet-async';
+import ConstructorPages from './pages/ConstructorPages';
 
 const App = () => {
-  return <TavernGamesPage />;
+  return(
+    <BD>
+      <HP>
+        <ConstructorPages />
+      </HP>
+    </BD>  
+  );
 };
 
 export default App;

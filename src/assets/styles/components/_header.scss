@@ -1,9 +1,19 @@
-header { background-color: var(--color-white); }
+$padding: 14px;
+$scroll-margin-top: calc(72px + $padding);
+
+header { 
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  z-index: 10000; 
+}
 
 .header {
+  
+
   color: var(--color-black);
 
-  @include grid-header-footer;
+  @include grid-header-footer($padding);
   @include logo;
   @include menu;
 }

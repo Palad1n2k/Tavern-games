@@ -1,29 +1,31 @@
 import Button from "./Button";
+import LogoLink from "./LogoLink";
 import Navigation from "./Navigation";
 
 const Header = () => {
   const position = 'header';
   const contentLink = [
     {
-      link: '#',
+      link: '/',
       content: 'Главная'
     },
     {
-      link: '#',
-      content: 'Каталог'
+      link: '/#about',
+      content: 'О нас'
     },
     {
-      link: '#',
-      content: 'О нас'
+      link: '/catalog',
+      content: 'Каталог'
     },
   ];
 
   return (
     <header>
       <div className={`${position} container`}>
-        <a href="">
-          <img src="logo-black.png" alt="" className={`${position}__logo`} />
-        </a>
+        <LogoLink 
+          src="logo-black.png" 
+          className={`${position}__logo`}
+        />
         <Navigation
           position={position}
           contentLink={contentLink}

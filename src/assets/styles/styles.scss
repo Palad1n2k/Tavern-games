@@ -1,11 +1,11 @@
 @import
   'normalize',
+  'variables',
   'founts',
-  'globals',
-  'media',
   'mixins',
-  'utils',
-  'variables';
+  'media',
+  'globals',
+  'utils';
 
 @import
   './components/header',

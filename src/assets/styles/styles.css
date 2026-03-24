@@ -205,14 +205,29 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-lithe-black: rgb(40, 34, 34);
+  --color-gray: rgb(217, 214, 214);
+}
+
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   src: url("../font/Roboto-Regular.woff2");
 }
 html {
+  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--color-gray) var(--color-lithe-black);
-  overflow-y: scroll;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+}
+body:not(h1, h2, h3, h4, h5, h6) {
+  font-size: 14px;
 }
 
 #root {
@@ -220,18 +235,12 @@ html {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   background-color: var(--color-gray);
-  font-family: "Roboto";
-  font-weight: 200;
 }
 
-*:not(h1, h2, h3, h4, h5, h6) {
-  font-size: 14px;
-}
-
-p > ul > li:not(:last-child)::after {
+p + ul > li:not(:last-child)::after, p + ol > li:not(:last-child)::after {
   content: ";";
 }
-p > ul > li:last-child::after {
+p + ul > li:last-child::after, p + ol > li:last-child::after {
   content: ".";
 }
 
@@ -242,15 +251,11 @@ p > ul > li:last-child::after {
   padding-inline: var(--padding);
 }
 
-:root {
-  --color-white: white;
-  --color-black: black;
-  --color-lithe-black: rgb(40, 34, 34);
-  --color-gray: rgb(217, 214, 214);
-}
-
 header {
+  position: sticky;
+  top: 0;
   background-color: var(--color-white);
+  z-index: 10000;
 }
 
 .header {
@@ -326,6 +331,10 @@ button {
   padding-block: 40px;
 }
 
-.title {
+section {
+  scroll-margin-top: 86px;
+}
+section .title {
+  margin-bottom: 40px;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */
