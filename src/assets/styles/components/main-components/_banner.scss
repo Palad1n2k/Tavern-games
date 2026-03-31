@@ -1,0 +1,18 @@
+.banner {
+  $url: '/src/assets/img/banner-img.webp';
+  $border-radius: var(--border-radius-cards) 0 0 var(--border-radius-cards);
+
+  max-width: 600px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-cards);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include img-in-block($url, $border-radius);
+
+  &__content {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+  }
+}

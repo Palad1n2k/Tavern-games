@@ -1,7 +1,18 @@
 .about {
+  $url: '/src/assets/img/about-img.jpeg';
+  $border-radius: var(--border-radius-cards) 0 0 var(--border-radius-cards);
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  border-radius: var(--border-radius-cards);
+  background-color: var(--color-white);
+
+  @include img-in-block($url, $border-radius);
+
+  &__content {
+    padding: 20px;
+  }
 
   p {
     margin-bottom: 5px;

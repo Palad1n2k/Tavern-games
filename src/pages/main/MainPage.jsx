@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <main>
       <div className={`${position} container`}>
-        <ScrollToAnchor />
+        {/* <ScrollToAnchor /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/#about" element={<HomePage />} />

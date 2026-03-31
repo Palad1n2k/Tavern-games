@@ -1,3 +1,4 @@
+import CatalogCards from './CatalogCards';
 import CatalogFilter from './CatalogFilter';
 import Title from './Title';
 
@@ -9,7 +10,7 @@ const Catalog = () => {
       <Title>Каталог</Title>
       <div className={position}>
         <CatalogFilter position={position} />
-        
+        <CatalogCards />
       </div>
     </section>
   );

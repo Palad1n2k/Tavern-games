@@ -13,9 +13,7 @@ body {
     weight: 200;
   }
 
-  &:not(h1, h2, h3, h4, h5, h6) {
-    font-size: 14px;
-  }
+  &:not(h1, h2, h3, h4, h5, h6) { font-size: 14px; }
 }
 
 #root {
@@ -27,10 +25,19 @@ body {
 
 p {
   & + ul,
-  & + ol{
+  & + ol {
     & > li {
       &:not(:last-child)::after { content: ";"; }
       &:last-child::after { content: "."; }
     }
+  }
+}
+
+.svg-btn {
+  $width: 30px;
+
+  & > svg {
+    width: $width;
+    aspect-ratio: 1;
   }
 }

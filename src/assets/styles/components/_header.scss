@@ -1,16 +1,14 @@
 $padding: 14px;
 $scroll-margin-top: calc(72px + $padding);
 
-header { 
+header {
   position: sticky;
   top: 0;
   background-color: var(--color-white);
-  z-index: 10000; 
+  z-index: 10000;
 }
 
 .header {
-  
-
   color: var(--color-black);
 
   @include grid-header-footer($padding);
